@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <title class="barCode">BarCode</title>
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+        <div class="mainPage" id="mainPage">
+            <div class="mainPageContainer">
+                <nav>
+                    <audio class="click" src="click.mp3" autoplay></audio>
+                    <div class="menu">
+                        <div class="logoMenu"><a href="#mainPage" id="logo"><img class="logo " src="./Image/logo.png"/></a></div>
+                        <div class="linkMenu">
+                            <div class="linkMenuItem" id="about">
+                                <a href="#aboutContainer">ABOUT</a>
+                                <div class="underLine"></div>
+                            </div>
+                            <div class="linkMenuItem" id="portfolio">
+                                <a href="#portfolioContainer">PORTFOLIO</a>
+                                <div class="underLine"></div>
+                            </div>
+                            <div class="linkMenuItem" id="skills">
+                                <a href="#skillsContainer">SKILLS</a>
+                                <div class="underLine"></div>
+                            </div>
+                            <div class="linkMenuItem" id="joinMe">
+                                <a href="#joinMeContainer" >JOIN ME</a>
+                                <div class="underLine"></div>
+                            </div>
+                        </div>
+
+                        <div class="soundSocialLinkContainer">
+                            <div class="sound">
+                                <audio class="audio" src="bgMusic.mp3" autoplay loop></audio>
+                                <div class="playPauseButton">
+                                    <img src="./Image/play.png" class="play" alt="playIcon">
+                                    <img src="./Image/pause.png" class="pause" alt="pauseIcon">
+                                </div>
+                                <img src="./Image/soundWave.png" alt="sound" class="soundBtn">
+                            </div>
+                            <div class="socialLinkMenu">
+                                <a class="webLink" href="https://tele.click/@mrs_barul"><img class="icons iconsMenu" src="./Image/telegram.png"/></a>
+                                <a class="webLink" href="https://github.com/mrsBarul"><img class="icons iconsMenu" src="./Image/github.png"/></a>
+                                <a class="webLink" href="https://www.instagram.com/mrs.barul/?igshid=NGVhN2U2NjQ0Yg%3D%3D"><img class="icons iconsMenu" src="./Image/instagram.png"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="greeting">
+                    <p class="hello"></p>
+                    <p class="iAm"></p>
+                    <p class="webDev"></p>
+                    <div>
+                        <button class="joinMeBtn">
+                            <a href="#joinMeContainer">Join me</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contentPage">
+            <div class="contentPageContainer">
+                <div class="menuToggleContainer">
+                    <div class="menuToggle">
+                        <button class="menuToggleBtn">Menu</button>
+                    </div>
+                </div>
+                <div class="aboutContainer" id="aboutContainer">
+                    <div class="ABOUT">
+                        <img src="./Image/ABOUT.png"/>
+                        <div class="about">
+                            <h2>ABOUT</h2>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <div class="aboutDescription">
+                            <div>
+                                <p>Two years ago, I took a chance and switched careers to pursue programming.</p>
+                            </div>
+                            <div>
+                                <p>Online learning, practice, patience. Overcoming obstacles, I achieved the dream. Encoding happiness into numbers.</p>
+                            </div>
+                        </div>
+                        <div class="facts">
+                            <ul>
+                                <li>I love the Harry Potter universe.
+                                </li>
+                                <li>I dream is to get into an archaeological<br> expedition in Egypt.
+                                </li>
+                                <li>I strive to create something incredibly<br> useful for people.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="portfolioContainer" id="portfolioContainer">
+                    <div class="WORKS">
+                        <img src="./Image/WORKS.png"/>
+                        <div class="myWorks">
+                            <h2>MY WORKS</h2>
+                        </div>
+                    </div>
+                    <div class="worksContainer">
+                        <div class="imageWorksContainer">
+                            <div class="imageWorks">
+                                <img class="imageWorksItem" src="./Image/DoorToDoor.png"/>
+                                <div class="tooltip">
+                                    <div class="tooltipItem">
+                                        <p class="title">DoorToDoor</p>
+                                        <div class="seeMoreContainer">
+                                            <div class="contents">
+                                                <p>CSS, React, Redux</p>
+                                            </div>
+                                            <div class="seeMoreBtn">
+                                                <button class="seeMore"><a href="indexWorks.html#DoorToDoor">See more</a></button>
+                                            </div>
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="imageWorks">
+                                <img class="imageWorksItem" src="./Image/MyFinance.png"/>
+                                <div class="tooltip">
+                                    <div class="tooltipItem">
+                                        <p class="title">My Finances</p>
+                                        <div class="seeMoreContainer">
+                                            <div class="contents">
+                                                <p>HTML, CSS, JavaScript</p>
+                                            </div>
+                                                <div class="seeMoreBtn">
+                                                    <button class="seeMore"><a href="indexWorks.html#MyFinance">See more</a></button>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imageWorks">
+                                <img class="imageWorksItem" src="./Image/QuizHarryPotter.png"/>
+                                <div class="tooltip">
+                                    <div class="tooltipItem">
+                                        <p class="title">HarryPotter Quiz</p>
+                                        <div class="seeMoreContainer">
+                                            <div class="contents">
+                                                <p>HTML, CSS, JavaScript</p>
+                                            </div>
+                                            <div class="seeMoreBtn">
+                                                <button class="seeMore"><a href="indexWorks.html#QuizHarryPotter">See more</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imageWorks">
+                                <img class="imageWorksItem" src="./Image/Boring.png"/>
+                                <div class="tooltip">
+                                    <div class="tooltipItem">
+                                        <p class="title">StopBoring</p>
+                                        <div class="seeMoreContainer">
+                                            <div class="contents">
+                                                <p>CSS, React</p>
+                                            </div>
+                                            <div class="seeMoreBtn">
+                                                <button class="seeMore"><a href="indexWorks.html#Boring">See more</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imageWorks">
+                                <img class="imageWorksItem" src="./Image/EpSaver.png"/>
+                                <div class="tooltip">
+                                    <div class="tooltipItem">
+                                        <p class="title">EpSaver</p>
+                                        <div class="seeMoreContainer">
+                                            <div class="contents">
+                                                <p>CSS, React, Redux, Node</p>
+                                            </div>
+                                            <div class="seeMoreBtn">
+                                                <button class="seeMore"><a href="indexWorks.html#EpSaver">See more</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imageWorks">
+                                <img class="imageWorksItem" src="./Image/Scarif.png"/>
+                                <div class="tooltip">
+                                    <div class="tooltipItem">
+                                        <p class="title">Scarif</p>
+                                        <div class="seeMoreContainer">
+                                            <div class="contents">
+                                                <p>HTML, CSS, JavaScript</p>
+                                            </div>
+                                            <div class="seeMoreBtn">
+                                                <button class="seeMore"><a href="indexWorks.html#Scarif">See more</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imageWorks">
+                                <img class="imageWorksItem" src="./Image/Weather.png"/>
+                                <div class="tooltip">
+                                    <div class="tooltipItem">
+                                        <p class="title">Weather</p>
+                                        <div class="seeMoreContainer">
+                                            <div class="contents">
+                                                <p>HTML, CSS, JavaScript</p>
+                                            </div>
+                                            <div class="seeMoreBtn">
+                                                <button class="seeMore"><a href="indexWorks.html#Weather">See more</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imageWorks">
+                                <img class="imageWorksItem" src="./Image/SplitOfExpenses.png"/>
+                                <div class="tooltip">
+                                    <div class="tooltipItem">
+                                        <p class="title">Expenses</p>
+                                        <div class="seeMoreContainer">
+                                            <div class="contents">
+                                                <p>HTML, CSS, JavaScript</p>
+                                            </div>
+                                            <div class="seeMoreBtn">
+                                                <button class="seeMore"><a href="indexWorks.html#SplitOfExpenses">See more</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imageWorks">
+                                <img class="imageWorksItem" src="./Image/JaredLeto.png"/>
+                                <div class="tooltip">
+                                    <div class="tooltipItem">
+                                        <p class="title">JaredLeto</p>
+                                        <div class="seeMoreContainer">
+                                            <div class="contents">
+                                                <p>HTML, CSS, Bootstrap</p>
+                                            </div>
+                                            <div class="seeMoreBtn">
+                                                <button class="seeMore"><a href="indexWorks.html#JaredLeto">See more</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="btnPrev">
+                                <img src="./Image/previos.png"/>
+                            </button>
+                            <button class="btnNext">
+                                <img src="./Image/next.png"/>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="skillsContainer" id="skillsContainer">
+                    <div class="SKILLS">
+                        <img src="./Image/SKILLS.png"/>
+                        <div class="skills">
+                            <h2>SKILLS</h2>
+                        </div>
+                    </div>
+
+                    <div class="skillsDescription">
+                        <p>My skills allow me to create unique adaptive <br>
+                            websites and using HTML, CSS, Bootstrap,<br>
+                            JavaScript, React, Redux and Node.js</p>
+                    </div>
+
+                    <div class="skillsImageContainer">
+                        <div class="skillsImage HTML">
+                            <div class="image">
+                                <img class="html" src="./Image/HTML.png"/>
+                            </div>
+                            <div class="skillsShow skillsShowStraight">
+                                <p>HTML</p>
+                                <div class="percentContainer">
+                                    <div class="line"><div class="colorLine"></div></div>
+                                    <span>90%</span>
+                                </div>
+                                <div class="arrow arrowStraight">
+                                    <div class="arrowLine"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skillsImage FIGMA">
+                            <div class="image">
+                                <img class="figma" src="./Image/FIGMA.png"/>
+                            </div>
+                            <div class="skillsShow skillsShowStraight">
+                                <p>FIGMA</p>
+                                <div class="percentContainer">
+                                    <div class="line"><div class="colorLine"></div></div>
+                                    <span>50%</span>
+                                </div>
+                                <div class="arrow arrowStraight">
+                                    <div class="arrowLine"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skillsImage CSS">
+                            <div class="image">
+                                <img class="css" src="./Image/CSS.png"/>
+                            </div>
+                            <div class="skillsShow skillsShowRight">
+                                <p>CSS</p>
+                                <div class="percentContainer">
+                                    <div class="line"><div class="colorLine"></div></div>
+                                    <span>70%</span>
+                                </div>
+                                <div class="arrow arrowRight">
+                                    <div class="arrowLine"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skillsImage BOOTSTRAP">
+                            <div  class="image">
+                                <img class="bootstrap" src="./Image/BOOTSTRAP.png"/>
+                            </div>
+                            <div class="skillsShow skillsShowRight">
+                                <p>BOOTSTRAP</p>
+                                <div class="percentContainer">
+                                    <div class="line"><div class="colorLine"></div></div>
+                                    <span>80%</span>
+                                </div>
+                                <div class="arrow arrowRight">
+                                    <div class="arrowLine"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skillsImage JAVASCRIPT ">
+                            <div class="image">
+                                <img class="javascript" src="./Image/JAVASCRIPT.png"/>
+                            </div>
+                            <div class="skillsShow skillsShowRight">
+                                <p>JAVASCRIPT</p>
+                                <div class="percentContainer">
+                                    <div class="line"><div class="colorLine"></div></div>
+                                    <span>65%</span>
+                                </div>
+                                <div class="arrow arrowRight">
+                                    <div class="arrowLine"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skillsImage REDUX">
+                            <div  class="image">
+                                <img class="redux" src="./Image/REDUX.png"/>
+                            </div>
+                            <div class="skillsShow skillsShowRight">
+                                <p>REDUX</p>
+                                <div class="percentContainer">
+                                    <div class="line"><div class="colorLine"></div></div>
+                                    <span>60%</span>
+                                </div>
+                                <div class="arrow arrowRight">
+                                    <div class="arrowLine"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skillsImage NODE">
+                            <div  class="image">
+                                <img class="node" src="./Image/NODE.png"/>
+                            </div>
+                            <div class="skillsShow skillsShowLeft">
+                                <p>NODE</p>
+                                <div class="percentContainer">
+                                    <div class="line"><div class="colorLine"></div></div>
+                                    <span>50%</span>
+                                </div>
+                                <div class="arrow arrowLeft">
+                                    <div class="arrowLine"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skillsImage REACT">
+                            <div class="image">
+                                <img class="react" src="./Image/REACT.png"/>
+                            </div>
+                            <div class="skillsShow skillsShowLeft">
+                                <p>REACT</p>
+                                <div class="percentContainer">
+                                    <div class="line"><div class="colorLine"></div></div>
+                                    <span>65%</span>
+                                </div>
+                                <div class="arrow arrowLeft">
+                                    <div class="arrowLine"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="joinMeContainer" id="joinMeContainer">
+                    <div class="JOINME">
+                        <img src="./Image/JOINME.png"/>
+                        <div class="joinMe">
+                            <h2>JOIN ME</h2>
+                        </div>
+                    </div>
+
+                    <div class="applicationContainer">
+                        <form class="formContainer"   
+                        action="https://formspree.io/f/meqbnjgy"
+                        method="POST">
+                            <div class="form">
+                                <div class="inputContainer">
+                                    <label>Name</label>
+                                    <input class="Name" type="text" name="text"/>
+                                </div>
+                                <div class="inputContainer">
+                                    <label>Email</label>
+                                    <input type="email" name="email"/>
+                                </div>
+                                <div class="inputContainer">
+                                    <label>Message</label>
+                                    <textarea name="message"></textarea>
+                                </div>
+                                <div class="sendBtn">
+                                    <button class="send" type="submit">Send</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="appeal">
+                            <p>let's start doing<br> something great</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
