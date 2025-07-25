@@ -84,12 +84,21 @@ playPauseButton.addEventListener('click', () => {
         pause.style.display = 'none';
         play.style.display = 'inline';
     }
-    });
+});
 
-    audio.addEventListener('ended', () => {
+audio.addEventListener('ended', () => {
     pause.style.display = 'none';
     play.style.display = 'inline';
 });
+
+document.addEventListener('visibilitychange', () => {
+    if (document.hidden && !audio.paused) {
+        audio.pause();
+        pause.style.display = 'none';
+        play.style.display = 'inline';
+    }
+});
+
 
 
 linkMenuItems.forEach((linkMenuItem, index) => {

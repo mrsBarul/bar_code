@@ -117,7 +117,7 @@ function updateContent(language) {
 
 function typeGreetings(language) {
     let i = 0, a = 0, b = 0;
-    const speed = 100;
+    const speed = 20;
 
     function one() {
         if (i < data[language].greeting_one.length) {
@@ -144,6 +144,6 @@ function typeGreetings(language) {
     }
 
     one();
-    typingTimeouts.push(setTimeout(two, 700));
-    typingTimeouts.push(setTimeout(three, 1900));
+    typingTimeouts.push(setTimeout(two, 200));
+    typingTimeouts.push(setTimeout(three, 550));
 }

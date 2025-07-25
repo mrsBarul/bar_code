@@ -298,7 +298,7 @@ p {
 .story {
     display: flex;
     justify-content: space-between;
-    gap: 100px;
+    gap: 70px;
 }
 
 .aboutDescription {
@@ -340,6 +340,7 @@ li {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: .75rem;
     height: 85px;
     background: radial-gradient(99% 151.65% at 1% 1.33%, rgba(28, 40, 63, 0.74) 0%, rgba(28, 40, 63, 0.7) 14.29%, rgba(28, 40, 63, 0.5) 33.79%, rgba(28, 40, 63, 0.35) 50.6%, rgba(28, 40, 63, 0.3) 60.71%, rgba(28, 40, 63, 0.18) 81.49%, rgba(28, 40, 63, 0.15) 98.56%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25), inset -10px -10px 34px rgba(170, 170, 170, 0.09), inset 10px 10px 10px rgba(0, 0, 0, 0.25);
@@ -455,9 +456,11 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     opacity: 0;
     transition: opacity 0.2s ease-in;
     gap: 20px;
+    padding: 1.5rem;
 }
 
 .title {
@@ -474,7 +477,7 @@ li {
 .seeMoreContainer {
     display: flex;    
     align-items: center;
-    width: 160px;
+    width: 100%;
 }
 
 .contents {
@@ -1182,11 +1185,6 @@ textarea {
         width: 520px;
     }
 
-    .story {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-    }
 
     .aboutDescription {
         display: flex;
@@ -1215,6 +1213,7 @@ textarea {
 
     .tooltipItem {
         gap: 10px;
+        padding: .5rem;
     }
 
     .skillsDescription {
@@ -1740,10 +1739,6 @@ textarea {
         font-size: 15px;
     }
 
-    .story {
-        gap: 30px;
-    }
-
     .worksContainer {
         gap: 30px;
     }
@@ -1761,10 +1756,6 @@ textarea {
 
     .imageWorks.active {
         transform: scale(1.2);
-    }
-
-    .tooltip {
-        border-radius: 10px;
     }
 
     .title {
