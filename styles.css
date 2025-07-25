@@ -24,7 +24,7 @@ body {
     justify-content: flex-end;
     width: 1280px;
     position: relative;
-    background-image: url(./Image/bg.png);
+    background-image: url(./access/image/bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -295,7 +295,7 @@ p {
     justify-content: center;
     align-items: center;
     flex: 1;
-    background-image: url(./Image/glow.png);
+    background-image: url(./access/image/glow.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -474,7 +474,7 @@ li {
     height: 30px;
     border: 2px solid #C5D8FF;
     border-radius: 10px;
-    background-image: url(./Image/glowButtons.png);
+    background-image: url(./access/image/glowButtons.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -502,7 +502,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url(./Image/glowButtons.png);
+    background-image: url(./access/image/glowButtons.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -796,7 +796,7 @@ textarea {
     height: 70px;
     border: 2px solid #C5D8FF;
     border-radius: 10px;
-    background-image: url(./Image/glowButtons.png);
+    background-image: url(./access/image/glowButtons.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -929,7 +929,7 @@ textarea {
     border: 2px solid #C5D8FF;
     border-radius: 10px;
     background-color: #151d32de;
-    background-image: url(./Image/glowButtons.png);
+    background-image: url(./access/image/glowButtons.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
