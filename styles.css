@@ -45,7 +45,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    width: 180px;
+    width: 250px;
     background-color: #060b1dc7;
     box-shadow: -5px 0px 10px #000412;
 }
@@ -53,7 +53,7 @@ nav {
 .logo {
     width: 100px;
     height: 50px;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .linkMenu {
@@ -71,14 +71,29 @@ nav {
     justify-content: center;
     position: relative;
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .linkMenuItem a {
     color: #C5D8FF;
     letter-spacing: 0.3rem;
     text-decoration: none;
+}
+
+.buttonLanguage {
+    border: 1px solid #C5D8FF;
+    color: #C5D8FF;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.buttonLanguage:hover {
+    color: #060B1D;
+    background-color: #C5D8FF;
+    transition: ease-in .2s;
 }
 
 .underLine {
@@ -95,15 +110,16 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 15px;
     width: 100%;
+    margin-bottom: 70px;
 }
 
 .sound {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
 }
 
 .play {
@@ -119,7 +135,7 @@ nav {
 .socialLinkMenu {
     display: flex;
     gap: 15px;
-    margin-bottom: 100px;
+    
 }
 
 .iconsMenu {
@@ -129,7 +145,7 @@ nav {
 
 .soundBtn {
     width: 65px;
-    height: 30px;
+    height: 40px;
 }
 
 .greeting {
@@ -144,8 +160,12 @@ nav {
     letter-spacing: 0.08em;
     font-weight: 800;
     line-height: 30px;
-    z-index: 2;
-    gap: 50px;
+    z-index: 0;
+    gap: 70px;
+}
+
+.joinMeBtnContainer {
+    margin-top: 50px;
 }
 
 
@@ -208,6 +228,7 @@ nav {
     width: 1280px;
     margin-top: 50px;
     overflow-x: hidden;
+    gap: 100px;
 }
 
 .menuToggleContainer{
@@ -253,17 +274,20 @@ p {
 }
 
 .aboutContainer {
-    width: 1080px;
-    min-height: 100vh;
+    width: 1030px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 200px;
+    gap: 100px;
 }
 
 .ABOUT, .SKILLS {
     position: relative;
     margin-top: 50px;
+}
+
+.ABOUT img, .SKILLS img, .WORKS img, .JOINME img {
+    width: 1030px;
 }
 
 .about, .skills {
@@ -274,7 +298,7 @@ p {
 .story {
     display: flex;
     justify-content: space-between;
-    gap: 150px;
+    gap: 100px;
 }
 
 .aboutDescription {
@@ -332,8 +356,7 @@ li {
     align-items: end;
     text-align: end;
     overflow: hidden;
-    width: 1080px;
-    min-height: 100vh;
+    width: 1030px;
     gap: 200px;
 }
 
@@ -520,9 +543,8 @@ li {
 .skillsContainer {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    width: 1080px;
-    min-height: 100vh;
+    gap: 100px;
+    width: 1030px;
 }
 
 .skillsDescription {
@@ -560,6 +582,7 @@ li {
 
 .HTML {
     top: 5%;
+    left: 3%;
 }
 
 .FIGMA {
@@ -578,7 +601,7 @@ li {
 }
 
 .JAVASCRIPT {
-    right: 20%;
+    right: 21%;
     top: -20%;
 }
 
@@ -621,7 +644,7 @@ li {
     border: 1px solid rgba(197, 216, 255, 0.3);
     padding: 20px;
     opacity: 0;
-    z-index: 11;
+    z-index: 0;
 }
 
 
@@ -713,8 +736,9 @@ li {
     flex-direction: column;
     align-items: flex-start;
     gap: 100px;
-    width: 1080px;
-    min-height: 100vh;
+    width: 1030px;
+    overflow: hidden;
+    margin-bottom: 100px;
 }
 
 
@@ -747,6 +771,7 @@ li {
     gap: 25px;
     width: 450px;
     height: 100%;
+    padding: 50px;
 }
 
 label {
@@ -851,7 +876,7 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 100px;
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 .worksPageContainer {
@@ -864,14 +889,14 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
-    width: 1080px;
+    width: 1030px;
     margin-bottom: 100px;
 }
 
 .worksImage {
     position: relative;
-    width: 320px;
-    height: 250px;
+    width: 300px;
+    height: 230px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -899,15 +924,15 @@ textarea {
 
 
 .worksImage:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     background-color: #333;
     transition: ease 1.5s;
     z-index: 10;
 }
 
 .worksImageItem {
-    width: 320px;
-    height: 250px;
+    width: 300px;
+    height: 230px;
     overflow: hidden;
     background: radial-gradient(99% 151.65% at 1% 1.33%, rgba(28, 40, 63, 0.74) 0%, rgba(28, 40, 63, 0.7) 14.29%, rgba(28, 40, 63, 0.5) 33.79%, rgba(28, 40, 63, 0.35) 50.6%, rgba(28, 40, 63, 0.3) 60.71%, rgba(28, 40, 63, 0.18) 81.49%, rgba(28, 40, 63, 0.15) 98.56%);
 } 
@@ -951,7 +976,7 @@ textarea {
     text-decoration: none;
 }
 
-@media all and (max-width: 1700px) {
+@media all and (max-width: 1024px) {
     .mainPageContainer, .mainPageWorksContainer  {
         width: 900px;
     }
@@ -964,23 +989,17 @@ textarea {
 
     .worksPage {
         gap: 50px;
-        margin-top: 50px;
     }
 
     .worksImageContainer {
         gap: 30px;
-        width: 720px;
+        width: 650px;
         margin-bottom: 50px;
     }
 
-    .worksImage {
-        width: 220px;
-        height: 150px;
-    }
-
-    .worksImageItem {
-        width: 220px;
-        height: 150px;
+    .worksImage, .worksImageItem {
+        width: 295px;
+        height: 230px;
     }
 
     .openSiteBtn {
@@ -989,7 +1008,7 @@ textarea {
     }
 
     .aboutContainer, .portfolioContainer, .skillsContainer, .joinMeContainer {
-        width: 720px;
+        width: 650px;
         min-height: auto;
     }
 
@@ -1006,7 +1025,7 @@ textarea {
     }
 
     .ABOUT img, .SKILLS img, .WORKS img, .JOINME img {
-        width: 720px;
+        width: 650px;
     }
 
     .story {
@@ -1062,15 +1081,21 @@ textarea {
         bottom: 7%
     }
 
+    .applicationContainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     .appeal p {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .formContainer {
+        width: 500px;
         height: 530px;
     }
     .form {
-        width: 350px;
+        width: 400px;
     }
 
     label {
@@ -1078,7 +1103,7 @@ textarea {
     }
 
     input, textarea {
-        width: 330px;
+        width: 390px;
         font-size: 18px;
     }
 
@@ -1087,19 +1112,6 @@ textarea {
     }
 }
 
-@media all and (max-width: 1300px) {
-    .mainPageContainer, .mainPageWorksContainer, .contentPageContainer  {
-        width: 800px;
-    }
-
-
-
-    .worksImageContainer, .aboutContainer, .portfolioContainer, .skillsContainer, .joinMeContainer,
-    .ABOUT img, .SKILLS img, .WORKS img, .JOINME img {
-        width: 620px;
-    }
-
-}
 
 
 @media all and (max-width: 820px) {
@@ -1107,18 +1119,26 @@ textarea {
         width: 720px;
     }
 
+    .worksPage {
+        margin-top: 50px;
+    }
+
+    .menu {
+        width: 200px;
+    }
+
     .worksImageContainer {
         gap: 40px;
-        width: 540px;
+        width: 520px;
     }
 
     .worksImage {
-        width: 250px;
+        width: 240px;
         height: 180px;
     }
 
     .worksImageItem {
-        width: 250px;
+        width: 240px;
         height: 180px;
     }
 
@@ -1131,12 +1151,9 @@ textarea {
         margin-top: 50px;
     }
 
-    .socialLinkMenu {
-        margin-bottom: 50px;
-    }
 
     .aboutContainer, .portfolioContainer, .skillsContainer, .joinMeContainer {
-        width: 540px;
+        width: 510px;
         min-height: auto;
     }
 
@@ -1162,7 +1179,7 @@ textarea {
     }
 
     .ABOUT img, .SKILLS img, .WORKS img, .JOINME img {
-        width: 540px;
+        width: 520px;
     }
 
     .story {
@@ -1313,35 +1330,19 @@ textarea {
     .react {
         width: 180px;
     }
-
-    .applicationContainer {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .formContainer {
-        width: 530px;
-    }
-    .form {
-        width: 450px;
-    }
-
-    input, textarea {
-        width: 430px;
-    }
 }
 
 
 
 @media all and (max-width: 540px) {
     .mainPageContainer, .contentPageContainer, .mainPageWorksContainer, .worksPage  {
-        width: 450px;
+        width: 400px;
     }
 
 
     .worksImageContainer {
         gap: 20px;
-        width: 450px;
+        width: 400px;
     }
 
     .worksImage {
@@ -1380,7 +1381,7 @@ textarea {
     }
 
     .aboutContainer, .portfolioContainer, .skillsContainer, .joinMeContainer {
-        width: 450px;
+        width: 400px;
     }
 
     .aboutContainer, .joinMeContainer, .skillsContainer, .applicationContainer {
@@ -1388,8 +1389,8 @@ textarea {
     }
 
     .menu {
-        background-color: #060b1deb;
-        width: 120px;
+        width: 150px;
+        background: #060b1df7;
     }
 
     .logo {
@@ -1399,19 +1400,23 @@ textarea {
     }
 
     .linkMenu {
-        font-size: 12px;
+        font-size: 13px;
+    }
+    
+    .linkMenuItem {
+
+        padding-top: 18px;
+        padding-bottom: 18px;
     }
 
-    .linkMenuItem {
-        padding-top: 5px;
-        padding-bottom: 5px;
+    .buttonLanguage {
+        border-radius: 5px;
+        font-size: 13px;
+        padding: 5px;
     }
 
     .soundSocialLinkContainer {
         gap: 15px;
-    }
-
-    .socialLinkMenu {
         margin-bottom: 20px;
     }
 
@@ -1425,7 +1430,7 @@ textarea {
     }
 
     .ABOUT img, .SKILLS img, .WORKS img, .JOINME img {
-        width: 450px;
+        width: 400px;
     }
 
     li {
@@ -1604,13 +1609,19 @@ textarea {
         width: 140px;
     }
 
+    .appeal p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
     .formContainer {
-        width: 450px;
+        width: 350px;
         height: 300px;
     }
     .form {
-        width: 400px;
+        width: 300px;
         gap: 10px;
+        padding: 25px;
     }
 
     .inputContainer {
@@ -1622,7 +1633,7 @@ textarea {
     }
 
     input, textarea {
-        width: 380px;
+        width: 280px;
         height: 20px;
     }
     textarea {
@@ -1666,21 +1677,21 @@ textarea {
     }
 
     .joinMeBtn {
-        width: 130px;
+        width: 120px;
         height: 50px;
     }
 
     .joinMeBtn a {
-        font-size: 20px;
+        font-size: 13px;
     }
 
     .joinMeBtn:hover::after {
         transform: translateX(124px);
-        font-size: 20px;
+        font-size: 13px;
     }
 
     .joinMeBtn:hover a {
-        font-size: 20px;
+        font-size: 13px;
     }
 
     .aboutContainer, .skillsContainer, .joinMeContainer {
@@ -1693,8 +1704,9 @@ textarea {
         gap: 50px;
     }
 
-    .menu {
-        width: 120px;
+
+    .menuToggleContainer{
+        bottom: 20px;
     }
 
     .logo {
@@ -1703,22 +1715,12 @@ textarea {
         margin-top: 20px;
     }
 
-    .linkMenu {
-        font-size: 12px;
-    }
-
-    .linkMenuItem {
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
 
     .soundSocialLinkContainer {
         gap: 15px;
-    }
-
-    .socialLinkMenu {
         margin-bottom: 20px;
     }
+
 
     .play, .iconsMenu, .pause {
         width: 20px;
@@ -1925,10 +1927,11 @@ textarea {
         width: 120px;
     }
 
-    .appeal p {
-        font-size: 20px;
-        line-height: 25px;
+    .joinMeContainer {
+        margin-bottom: 50px;
     }
+
+
 
     .formContainer {
         width: 300px;
@@ -1961,7 +1964,3 @@ textarea {
     }
 
 }
-
-
-
-

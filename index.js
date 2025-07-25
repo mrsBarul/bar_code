@@ -190,47 +190,6 @@ linkMenuItems.forEach((linkMenuItem, index) => {
     prevButton.addEventListener("click", prevSlide);
 
 
-
-const hello = document.querySelector(".hello");
-const iAm = document.querySelector(".iAm");
-const webDev = document.querySelector(".webDev");
-let textHello = `Hello,`
-let textIAm = `I'm Kristina,`
-let textWeb = `web developer.`
-let i = 0;
-let a = 0;
-let b = 0;
-let speed = 100;
-
-const typing = () => {
-    function one() {
-        if(i < textHello.length) {
-            hello.textContent += textHello.charAt(i);
-            i++;
-            setTimeout(one, speed)
-        }
-    } one()
-    function two() {
-        if(a < textIAm.length) {
-            iAm.textContent += textIAm.charAt(a);
-            a++;
-            setTimeout(two, speed)
-        }
-    } setTimeout(two, 700)
-    function three() {
-        if(b < textWeb.length) {
-            webDev.textContent += textWeb.charAt(b);
-            b++;
-            setTimeout(three, speed)
-        }
-    } setTimeout(three, 1900)
-}
-
-setTimeout(typing, 1200);
-
-
-
-
 for (let i = 0; i < image.length; i++) {
     image[i].addEventListener('mouseover', function() {
         let skill = this.nextElementSibling;
@@ -240,6 +199,7 @@ for (let i = 0; i < image.length; i++) {
         const width = span.innerHTML;
         if (skill.style.opacity = '0') {
             skill.style.opacity = '1';
+            skill.style.zIndex = '11';
             click.play();
             colorLine.style.width = width;
         }
@@ -251,6 +211,7 @@ for (let i = 0; i < image.length; i++) {
         const colorLine = percentContainer.querySelector('.colorLine');
         if (skill.style.opacity = '1') {
             skill.style.opacity = '0';
+            skill.style.zIndex = '0';
             colorLine.style.width = '0';
         }
     })
@@ -266,7 +227,7 @@ function updateMenuState() {
         menu.style.display = menuOpen ? 'block' : 'none'; 
         menuToggleContainer.style.display = menuOpen ? 'none' : 'block';
     } else {
-        menu.style.opacity = 'block';
+        menu.style.opacity = 1;
     }
 }
 
@@ -289,6 +250,18 @@ window.addEventListener('scroll', () => {
 window.addEventListener('resize', () => {
     updateMenuState();
     updateSkillsClasses();
+});
+
+document.addEventListener('click', (event) => {
+    if (window.innerWidth <= screenWidthThreshold && menuOpen) {
+        const isClickInsideMenu = menu.contains(event.target);
+        const isClickOnToggle = menuToggleContainer.contains(event.target);
+
+        if (!isClickInsideMenu && !isClickOnToggle) {
+            menuOpen = false;
+            updateMenuState();
+        }
+    }
 });
 
 

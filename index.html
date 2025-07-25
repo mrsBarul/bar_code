@@ -20,20 +20,23 @@
                         <div class="logoMenu"><a href="#mainPage" id="logo"><img class="logo " src="./access/image/logo.png"/></a></div>
                         <div class="linkMenu">
                             <div class="linkMenuItem" id="about">
-                                <a href="#aboutContainer">ABOUT</a>
+                                <a href="#aboutContainer" class="menu_about">ОБО МНЕ</a>
                                 <div class="underLine"></div>
                             </div>
                             <div class="linkMenuItem" id="portfolio">
-                                <a href="#portfolioContainer">PORTFOLIO</a>
+                                <a href="#portfolioContainer" class="menu_portfolio">ПОРТФОЛИО</a>
                                 <div class="underLine"></div>
                             </div>
                             <div class="linkMenuItem" id="skills">
-                                <a href="#skillsContainer">SKILLS</a>
+                                <a href="#skillsContainer" class="menu_skills">НАВЫКИ</a>
                                 <div class="underLine"></div>
                             </div>
                             <div class="linkMenuItem" id="joinMe">
-                                <a href="#joinMeContainer" >JOIN ME</a>
+                                <a href="#joinMeContainer" class="menu_joinMe">НАПИСАТЬ</a>
                                 <div class="underLine"></div>
+                            </div>
+                            <div class="linkMenuItem" id="language">
+                                <button class="buttonLanguage" data-language="ru">EN</button>
                             </div>
                         </div>
 
@@ -47,7 +50,7 @@
                                 <img src="./access/image/soundWave.png" alt="sound" class="soundBtn">
                             </div>
                             <div class="socialLinkMenu">
-                                <a class="webLink" href="https://tele.click/@mrs_barul"><img class="icons iconsMenu" src="./access/image/telegram.png"/></a>
+                                <a class="webLink" href="https://t.me/@mrs_barul"><img class="icons iconsMenu" src="./access/image/telegram.png"/></a>
                                 <a class="webLink" href="https://github.com/mrsBarul"><img class="icons iconsMenu" src="./access/image/github.png"/></a>
                                 <a class="webLink" href="https://www.instagram.com/mrs.barul/?igshid=NGVhN2U2NjQ0Yg%3D%3D"><img class="icons iconsMenu" src="./access/image/instagram.png"/></a>
                             </div>
@@ -58,9 +61,9 @@
                     <p class="hello"></p>
                     <p class="iAm"></p>
                     <p class="webDev"></p>
-                    <div>
+                    <div class="joinMeBtnContainer">
                         <button class="joinMeBtn">
-                            <a href="#joinMeContainer">Join me</a>
+                            <a href="#joinMeContainer" class="greeting_joinMe">Написать</a>
                         </button>
                     </div>
                 </div>
@@ -70,32 +73,32 @@
             <div class="contentPageContainer">
                 <div class="menuToggleContainer">
                     <div class="menuToggle">
-                        <button class="menuToggleBtn">Menu</button>
+                        <button class="menuToggleBtn">Меню</button>
                     </div>
                 </div>
                 <div class="aboutContainer" id="aboutContainer">
                     <div class="ABOUT">
                         <img src="./access/image/ABOUT.png"/>
                         <div class="about">
-                            <h2>ABOUT</h2>
+                            <h2 class="adoutMe">ОБО МНЕ</h2>
                         </div>
                     </div>
                     <div class="story">
                         <div class="aboutDescription">
                             <div>
-                                <p>Two years ago, I took a chance and switched careers to pursue programming.</p>
+                                <p class="aboutMe_history_one">Два года назад я рискнула и сменила профессию, чтобы заняться программированием.</p>
                             </div>
                             <div>
-                                <p>Online learning, practice, patience. Overcoming obstacles, I achieved the dream. Encoding happiness into numbers.</p>
+                                <p class="aboutMe_history_two">Я full-stack разработчик, закончила курсы программирования в CanSheCode, а сейчас углубляю свои знания и навыки на стажировке в AL Tech Labs Ltd., что позволяет мне активно развиваться в области веб-разработки.</p>
                             </div>
                         </div>
                         <div class="facts">
                             <ul>
-                                <li>I love the Harry Potter universe.
+                                <li class="aboutMe_fact_one">Я обожаю вселенную Гарри Поттера.
                                 </li>
-                                <li>I dream is to get into an archaeological<br> expedition in Egypt.
+                                <li class="aboutMe_fact_two">Моя мечта — принять участие в археологической<br> экспедиции в Египте.
                                 </li>
-                                <li>I strive to create something incredibly<br> useful for people.</li>
+                                <li class="aboutMe_fact_three">Хочу внести вклад в будущее, где технологии<br> возвращают возможности.</li>
                             </ul>
                         </div>
                     </div>
@@ -105,7 +108,7 @@
                     <div class="WORKS">
                         <img src="./access/image/WORKS.png"/>
                         <div class="myWorks">
-                            <h2>MY WORKS</h2>
+                            <h2 class="myPortfolio">ПОРТФОЛИО</h2>
                         </div>
                     </div>
                     <div class="worksContainer">
@@ -120,23 +123,23 @@
                                                 <p>CSS, React, Redux</p>
                                             </div>
                                             <div class="seeMoreBtn">
-                                                <button class="seeMore"><a href="indexWorks.html#DoorToDoor">See more</a></button>
+                                                <button class="seeMore"><a href="indexWorks.html#DoorToDoor" class="myWorks_seeMore">Открыть</a></button>
                                             </div>
                                         </div>
                                 </div>
                                 </div>
                             </div>
                             <div class="imageWorks">
-                                <img class="imageWorksItem" src="./access/image/MyFinance.png"/>
+                                <img class="imageWorksItem" src="./access/image/interior.png"/>
                                 <div class="tooltip">
                                     <div class="tooltipItem">
-                                        <p class="title">My Finances</p>
+                                        <p class="title">Interior designer</p>
                                         <div class="seeMoreContainer">
                                             <div class="contents">
-                                                <p>HTML, CSS, JavaScript</p>
+                                                <p>React, SCSS, Node</p>
                                             </div>
                                                 <div class="seeMoreBtn">
-                                                    <button class="seeMore"><a href="indexWorks.html#MyFinance">See more</a></button>
+                                                    <button class="seeMore"><a href="indexWorks.html#interior" class="myWorks_seeMore">Открыть</a></button>
                                                 </div>
                                             
                                         </div>
@@ -144,16 +147,16 @@
                                 </div>
                             </div>
                             <div class="imageWorks">
-                                <img class="imageWorksItem" src="./access/image/QuizHarryPotter.png"/>
+                                <img class="imageWorksItem" src="./access/image/mortgage.png"/>
                                 <div class="tooltip">
                                     <div class="tooltipItem">
-                                        <p class="title">HarryPotter Quiz</p>
+                                        <p class="title">Mortgage Consultant</p>
                                         <div class="seeMoreContainer">
                                             <div class="contents">
-                                                <p>HTML, CSS, JavaScript</p>
+                                                <p>React, SCSS, Node</p>
                                             </div>
                                             <div class="seeMoreBtn">
-                                                <button class="seeMore"><a href="indexWorks.html#QuizHarryPotter">See more</a></button>
+                                                <button class="seeMore"><a href="indexWorks.html#mortgage" class="myWorks_seeMore">Открыть</a></button>
                                             </div>
                                         </div>
                                     </div>
@@ -169,39 +172,39 @@
                                                 <p>CSS, React</p>
                                             </div>
                                             <div class="seeMoreBtn">
-                                                <button class="seeMore"><a href="indexWorks.html#Boring">See more</a></button>
+                                                <button class="seeMore"><a href="indexWorks.html#Boring" class="myWorks_seeMore">Открыть</a></button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="imageWorks">
-                                <img class="imageWorksItem" src="./access/image/EpSaver.png"/>
+                                <img class="imageWorksItem" src="./access/image/acrosstheworld.png"/>
                                 <div class="tooltip">
                                     <div class="tooltipItem">
-                                        <p class="title">EpSaver</p>
+                                        <p class="title">Кругостветка</p>
                                         <div class="seeMoreContainer">
                                             <div class="contents">
-                                                <p>CSS, React, Redux, Node</p>
+                                                <p>SCSS, TypeScript, Redux, Node</p>
                                             </div>
                                             <div class="seeMoreBtn">
-                                                <button class="seeMore"><a href="indexWorks.html#EpSaver">See more</a></button>
+                                                <button class="seeMore"><a href="indexWorks.html#acrosstheworld" class="myWorks_seeMore">Открыть</a></button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="imageWorks">
-                                <img class="imageWorksItem" src="./access/image/Scarif.png"/>
+                                <img class="imageWorksItem" src="./access/image/lasersharm.png"/>
                                 <div class="tooltip">
                                     <div class="tooltipItem">
-                                        <p class="title">Scarif</p>
+                                        <p class="title">Laser Sharm</p>
                                         <div class="seeMoreContainer">
                                             <div class="contents">
-                                                <p>HTML, CSS, JavaScript</p>
+                                                <p>React, SCSS</p>
                                             </div>
                                             <div class="seeMoreBtn">
-                                                <button class="seeMore"><a href="indexWorks.html#Scarif">See more</a></button>
+                                                <button class="seeMore"><a href="indexWorks.html#lasersharm" class="myWorks_seeMore">Открыть</a></button>
                                             </div>
                                         </div>
                                     </div>
@@ -217,7 +220,7 @@
                                                 <p>HTML, CSS, JavaScript</p>
                                             </div>
                                             <div class="seeMoreBtn">
-                                                <button class="seeMore"><a href="indexWorks.html#Weather">See more</a></button>
+                                                <button class="seeMore"><a href="indexWorks.html#Weather" class="myWorks_seeMore">Открыть</a></button>
                                             </div>
                                         </div>
                                     </div>
@@ -233,23 +236,23 @@
                                                 <p>HTML, CSS, JavaScript</p>
                                             </div>
                                             <div class="seeMoreBtn">
-                                                <button class="seeMore"><a href="indexWorks.html#SplitOfExpenses">See more</a></button>
+                                                <button class="seeMore"><a href="indexWorks.html#SplitOfExpenses" class="myWorks_seeMore">Открыть</a></button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="imageWorks">
-                                <img class="imageWorksItem" src="./access/image/JaredLeto.png"/>
+                                <img class="imageWorksItem" src="./access/image/playlife.png"/>
                                 <div class="tooltip">
                                     <div class="tooltipItem">
-                                        <p class="title">JaredLeto</p>
+                                        <p class="title">PlayLife</p>
                                         <div class="seeMoreContainer">
                                             <div class="contents">
-                                                <p>HTML, CSS, Bootstrap</p>
+                                                <p>React, SCSS</p>
                                             </div>
                                             <div class="seeMoreBtn">
-                                                <button class="seeMore"><a href="indexWorks.html#JaredLeto">See more</a></button>
+                                                <button class="seeMore"><a href="indexWorks.html#playlife" class="myWorks_seeMore">Открыть</a></button>
                                             </div>
                                         </div>
                                     </div>
@@ -271,14 +274,14 @@
                     <div class="SKILLS">
                         <img src="./access/image/SKILLS.png"/>
                         <div class="skills">
-                            <h2>SKILLS</h2>
+                            <h2 class="mySkills">SKILLS</h2>
                         </div>
                     </div>
 
                     <div class="skillsDescription">
-                        <p>My skills allow me to create unique adaptive <br>
-                            websites and using HTML, CSS, Bootstrap,<br>
-                            JavaScript, React, Redux and Node.js</p>
+                        <p class="skills_description">Мои навыки позволяют мне создавать уникальные адаптивные  <br>
+                            веб-сайты, используя HTML, CSS, Bootstrap,<br>
+                            JavaScript, React, Redux и Node.js</p>
                     </div>
 
                     <div class="skillsImageContainer">
@@ -410,7 +413,7 @@
                     <div class="JOINME">
                         <img src="./access/image/JOINME.png"/>
                         <div class="joinMe">
-                            <h2>JOIN ME</h2>
+                            <h2 class="joinMe_title">JOIN ME</h2>
                         </div>
                     </div>
 
@@ -420,25 +423,25 @@
                         method="POST">
                             <div class="form">
                                 <div class="inputContainer">
-                                    <label>Name</label>
+                                    <label class="joinMe_name">Name</label>
                                     <input class="Name" type="text" name="text"/>
                                 </div>
                                 <div class="inputContainer">
-                                    <label>Email</label>
+                                    <label class="joinMe_email">Email</label>
                                     <input type="email" name="email"/>
                                 </div>
                                 <div class="inputContainer">
-                                    <label>Message</label>
+                                    <label class="joinMe_message">Message</label>
                                     <textarea name="message"></textarea>
                                 </div>
                                 <div class="sendBtn">
-                                    <button class="send" type="submit">Send</button>
+                                    <button class="send joinMe_send" type="submit">Send</button>
                                 </div>
                             </div>
                         </form>
 
                         <div class="appeal">
-                            <p>let's start doing<br> something great</p>
+                            <p class="joinMe_appeal">давайте сделаем<br> что-то великолепное</p>
                         </div>
                     </div>
                 </div>
@@ -447,5 +450,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="index.js"></script>
+    <script src="indexTranslate.js"></script>
 </body>
 </html>

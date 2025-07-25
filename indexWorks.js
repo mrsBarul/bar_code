@@ -8,6 +8,7 @@ const click = document.querySelector('.click');
 const worksImage =document.querySelectorAll('.worksImage');
 const menuToggleContainer = document.querySelector('.menuToggleContainer');
 const menu = document.querySelector('nav');
+const buttonLanguage = document.querySelector('.buttonLanguage')
 
 playPauseButton.addEventListener('click', () => {
     if (audio.paused) {
@@ -79,3 +80,68 @@ window.addEventListener('scroll', () => {
 window.addEventListener('resize', () => {
     updateMenuState();
 });
+
+document.addEventListener('click', (event) => {
+    if (window.innerWidth <= screenWidthThreshold && menuOpen) {
+        const isClickInsideMenu = menu.contains(event.target);
+        const isClickOnToggle = menuToggleContainer.contains(event.target);
+
+        if (!isClickInsideMenu && !isClickOnToggle) {
+            menuOpen = false;
+            updateMenuState();
+        }
+    }
+});
+
+
+
+const data = {
+    "ru" : {
+        "menu_about": "ОБО МНЕ",
+        "menu_portfolio": "ПОРТФОЛИО",
+        "menu_skills": "НАВЫКИ",
+        "menu_joinMe": "НАПИСАТЬ",
+        "menu_language" : "EN",
+        "menu": "Меню",
+        "myPortfolio": "ПОРТФОЛИО",
+        "open" : "Открыть"
+    },
+    "en" : {
+        "menu_about" : "ABOUT",
+        "menu_portfolio" : "PORTFOLIO",
+        "menu_skills" : "SKILLS",
+        "menu_joinMe" : "JOIN ME",
+        "menu_language" : "RU",
+        "menu" : "Menu",
+        "myPortfolio" : "MY WORKS",
+        "open" : "Open"
+    }
+}
+let currentLanguage = 'ru';
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    updateContent(currentLanguage);
+});
+
+buttonLanguage.addEventListener('click', () => {
+
+    currentLanguage = (currentLanguage === 'ru') ? 'en' : 'ru';
+    buttonLanguage.setAttribute('data-language', currentLanguage);
+
+    buttonLanguage.textContent = data[currentLanguage].menu_language;
+
+    updateContent(currentLanguage);
+});
+
+function updateContent(language) {
+    document.querySelector('.menu_about').textContent = data[language].menu_about;
+    document.querySelector('.menu_portfolio').textContent = data[language].menu_portfolio;
+    document.querySelector('.menu_skills').textContent = data[language].menu_skills;
+    document.querySelector('.menu_joinMe').textContent = data[language].menu_joinMe;
+    document.querySelector('.menuToggleBtn').textContent = data[language].menu;
+    document.querySelector('.myPortfolio').textContent = data[language].myPortfolio;
+    document.querySelectorAll('.open').forEach(element => {
+        element.textContent = data[language].open;
+    });
+}

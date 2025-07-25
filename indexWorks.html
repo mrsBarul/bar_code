@@ -18,20 +18,23 @@
                     <div class="logoMenu"><a href="index.html#mainPage"><img class="logo " src="./access/image/logo.png"/></a></div>
                     <div class="linkMenu">
                         <div class="linkMenuItem">
-                            <a href="index.html#aboutContainer">ABOUT</a>
+                            <a href="index.html#aboutContainer" class="menu_about">ОБО МНЕ</a>
                             <div class="underLine"></div>
                         </div>
                         <div class="linkMenuItem">
-                            <a href="index.html#portfolioContainer">PORTFOLIO</a>
+                            <a href="index.html#portfolioContainer" class="menu_portfolio">ПОРТФОЛИО</a>
                             <div class="underLine"></div>
                         </div>
                         <div class="linkMenuItem">
-                            <a href="index.html#skillsContainer">SKILLS</a>
+                            <a href="index.html#skillsContainer" class="menu_skills">НАВЫКИ</a>
                             <div class="underLine"></div>
                         </div>
                         <div class="linkMenuItem">
-                            <a href="index.html#joinMeContainer">JOIN ME</a>
+                            <a href="index.html#joinMeContainer" class="menu_joinMe">НАПИСАТЬ</a>
                             <div class="underLine"></div>
+                        </div>
+                        <div class="linkMenuItem" id="language">
+                            <button class="buttonLanguage" data-language="ru">EN</button>
                         </div>
                     </div>
 
@@ -45,7 +48,7 @@
                             <img src="./access/image/soundWave.png" alt="sound" class="soundBtn">
                         </div>
                         <div class="socialLinkMenu">
-                            <a class="webLink" href="https://tele.click/@mrs_barul"><img class="icons iconsMenu" src="./access/image/telegram.png"/></a>
+                            <a class="webLink" href="https://t.me/@mrs_barul"><img class="icons iconsMenu" src="./access/image/telegram.png"/></a>
                             <a class="webLink" href="https://github.com/mrsBarul"><img class="icons iconsMenu" src="./access/image/github.png"/></a>
                             <a class="webLink" href="https://www.instagram.com/mrs.barul/?igshid=NGVhN2U2NjQ0Yg%3D%3D"><img class="icons iconsMenu" src="./access/image/instagram.png"/></a>
                         </div>
@@ -57,22 +60,54 @@
                     <div class="WORKS">
                         <img src="./access/image/WORKS.png"/>
                         <div class="myWorks">
-                            <h2>MY WORKS</h2>
+                            <h2 class="myPortfolio">ПОРТФОЛИО</h2>
                         </div>
                     </div>
                 </div>
                 <div class="worksImageContainer">
                     <div class="menuToggleContainer">
                         <div class="menuToggle">
-                            <button class="menuToggleBtn">Menu</button>
+                            <button class="menuToggleBtn">Меню</button>
                         </div>
                     </div>
-                    <div class="worksImage" id="epSaver">
+                    <div class="worksImage" id="acrosstheworld">
                         <div class="imageSite">
-                            <img class="worksImageItem" src="./access/image/EpSaver.png"/>
+                            <img class="worksImageItem" src="./access/image/acrosstheworld.png"/>
                         </div>
                         <div class="openSiteBtn">
-                            <button class="openSite"><a href="" target="_blank">Open</a></button>
+                            <button class="openSite"><a href="https://acrosstheworld.ru" target="_blank">Open</a></button>
+                        </div>
+                    </div>
+                    <div class="worksImage" id="interior">
+                        <div class="imageSite">
+                            <img class="worksImageItem" src="./access/image/interior.png"/>
+                        </div>
+                        <div class="openSiteBtn">
+                            <button class="openSite"><a href="https://olesya-martin.netlify.app" target="_blank">Open</a></button>
+                        </div>
+                    </div>
+                    <div class="worksImage" id="lasersharm">
+                        <div class="imageSite">
+                            <img class="worksImageItem" src="./access/image/lasersharm.png"/>
+                        </div>
+                        <div class="openSiteBtn">
+                            <button class="openSite"><a href="https://lasersharm.ru" target="_blank">Open</a></button>
+                        </div>
+                    </div>
+                    <div class="worksImage" id="mortgage">
+                        <div class="imageSite">
+                            <img class="worksImageItem" src="./access/image/mortgage.png"/>
+                        </div>
+                        <div class="openSiteBtn">
+                            <button class="openSite"><a href="https://mortage-cz.netlify.app" target="_blank">Open</a></button>
+                        </div>
+                    </div>
+                    <div class="worksImage" id="playlife">
+                        <div class="imageSite">
+                            <img class="worksImageItem" src="./access/image/playlife.png"/>
+                        </div>
+                        <div class="openSiteBtn">
+                            <button class="openSite"><a href="https://play-life-ai.netlify.app" target="_blank">Open</a></button>
                         </div>
                     </div>
                     <div class="worksImage" id="DoorToDoor">
@@ -80,7 +115,7 @@
                             <img class="worksImageItem" src="./access/image/DoorToDoor.png"/>
                         </div>
                         <div class="openSiteBtn">
-                            <button class="openSite"><a href="https://courageous-sunflower-9ccc30.netlify.app" target="_blank">Open</a></button>
+                            <button class="openSite"><a href="https://courageous-sunflower-9ccc30.netlify.app" target="_blank" class="open">Открыть</a></button>
                         </div>
                     </div>
                     <div class="worksImage" id="Boring">
@@ -88,7 +123,7 @@
                             <img class="worksImageItem" src="./access/image/Boring.png"/>
                         </div>
                         <div class="openSiteBtn">
-                            <button class="openSite"><a href="https://thunderous-sable-fafddf.netlify.app" target="_blank">Open</a></button>
+                            <button class="openSite"><a href="https://thunderous-sable-fafddf.netlify.app" target="_blank" class="open">Открыть</a></button>
                         </div>
                     </div>
                     <div class="worksImage" id="Scarif">
@@ -96,7 +131,7 @@
                             <img class="worksImageItem" src="./access/image/Scarif.png"/>
                         </div>
                         <div class="openSiteBtn">
-                            <button class="openSite"><a href="https://juniper-fine-pullover.glitch.me" target="_blank">Open</a></button>
+                            <button class="openSite"><a href="https://juniper-fine-pullover.glitch.me" target="_blank" class="open">Открыть</a></button>
                         </div>
                     </div>
                     <div class="worksImage" id="SplitOfExpenses">
@@ -104,7 +139,7 @@
                             <img class="worksImageItem" src="./access/image/SplitOfExpenses.png"/>
                         </div>
                         <div class="openSiteBtn">
-                            <button class="openSite"><a href="https://sweet-rare-walnut.glitch.me" target="_blank">Open</a></button>
+                            <button class="openSite"><a href="https://sweet-rare-walnut.glitch.me" target="_blank" class="open">Открыть</a></button>
                         </div>
                     </div>
                     <div class="worksImage" id="MyFinance">
@@ -112,15 +147,7 @@
                             <img class="worksImageItem" src="./access/image/MyFinance.png"/>
                         </div>
                         <div class="openSiteBtn">
-                            <button class="openSite"><a href="https://worried-quiver-edge.glitch.me" target="_blank">Open</a></button>
-                        </div>
-                    </div>
-                    <div class="worksImage" id="QuizHarryPotter">
-                        <div class="imageSite">
-                            <img class="worksImageItem" src="./access/image/QuizHarryPotter.png"/>
-                        </div>
-                        <div class="openSiteBtn">
-                            <button class="openSite"><a href="https://free-sprinkle-tie.glitch.me" target="_blank">Open</a></button>
+                            <button class="openSite"><a href="https://worried-quiver-edge.glitch.me" target="_blank" class="open">Открыть</a></button>
                         </div>
                     </div>
                     <div class="worksImage">
@@ -128,7 +155,7 @@
                             <img class="worksImageItem" src="./access/image/Quotes.png"/>
                         </div>
                         <div class="openSiteBtn">
-                            <button class="openSite"><a href="https://winter-observant-scar.glitch.me"  target="_blank">Open</a></button>
+                            <button class="openSite"><a href="https://winter-observant-scar.glitch.me"  target="_blank" class="open">Открыть</a></button>
                         </div>
                     </div>
                     <div class="worksImage">
@@ -136,7 +163,7 @@
                             <img class="worksImageItem" src="./access/image/SplitOfBill.png"/>
                         </div>
                         <div class="openSiteBtn">
-                            <button class="openSite"><a href="https://animated-endurable-office.glitch.me" target="_blank">Open</a></button>
+                            <button class="openSite"><a href="https://animated-endurable-office.glitch.me" target="_blank" class="open">Открыть</a></button>
                         </div>
                     </div>
                     <div class="worksImage" id="Weather">
@@ -144,7 +171,7 @@
                             <img class="worksImageItem" src="./access/image/Weather.png"/>
                         </div>
                         <div class="openSiteBtn">
-                            <button class="openSite"><a href="https://tungsten-brook-skirt.glitch.me" target="_blank">Open</a></button>
+                            <button class="openSite"><a href="https://tungsten-brook-skirt.glitch.me" target="_blank" class="open">Открыть</a></button>
                         </div>
                     </div>
                     <div class="worksImage">
@@ -152,7 +179,7 @@
                             <img class="worksImageItem" src="./access/image/FortuneCookies.png"/>
                         </div>
                         <div class="openSiteBtn">
-                            <button class="openSite"><a href="https://bubble-super-cruiser.glitch.me" target="_blank">Open</a></button>
+                            <button class="openSite"><a href="https://bubble-super-cruiser.glitch.me" target="_blank" class="open">Открыть</a></button>
                         </div>
                     </div>
                     <div class="worksImage" id="JaredLeto">
@@ -160,8 +187,15 @@
                             <img class="worksImageItem" src="./access/image/JaredLeto.png"/>
                         </div>
                         <div class="openSiteBtn">
-                            <button class="openSite"><a href="https://dandy-thoracic-eel.glitch.me" target="_blank">Open</a></button>
+                            <button class="openSite"><a href="https://dandy-thoracic-eel.glitch.me" target="_blank" class="open">Открыть</a></button>
                         </div>
+                    </div>
+                    <div class="worksImage" id="QuizHarryPotter">
+                        <div class="imageSite">
+                            <img class="worksImageItem" src="./access/image/QuizHarryPotter.png"/>
+                        </div>
+                        <div class="openSiteBtn">
+                            <button class="openSite"><a href="https://free-sprinkle-tie.glitch.me" target="_blank" class="open">Открыть</a></button>
                     </div>
                 </div>
             </div>
@@ -169,6 +203,22 @@
     </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/i18next/i18next.min.js"></script>
     <script src="indexWorks.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
